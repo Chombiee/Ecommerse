@@ -11,7 +11,8 @@
     <div class="preheader">
         <p>inserte cosa aqui</p>
     </div>
-    <header class="header">
+
+     <header class="header">
         <div class="header-logo">
             <img src="assets/img/logo" alt="Logo de la tienda">
         </div>
@@ -28,7 +29,6 @@
             </a>
         </div>
     </header>
-
     <nav class="categories">
         <ul>
             <li>
@@ -59,74 +59,86 @@
             </li>
         </ul>
     </nav>
+    <div class="breadcrumbs">
+        <a href="index.html">Pagina principal</a> / <span>Mascotas</span>
+    </div>
 
-    <section class="carousel">
-        <div class="carousel-container">
-            <div class="slide active">
-                <img src="assets/img/banner1" alt="Banner 1">
+    <main class="category-layout">
+        <aside class="filters">
+            <h3 class="filter-title">Filtros</h3>
+            <div class="filter-group">
+                <h4>Categoría</h4>
+                <ul>
+                    <li><label><input type="checkbox"> Ropa</label></li>
+                    <li><label><input type="checkbox"> Juguetes</label></li>
+                    <li><label><input type="checkbox"> Accesorios</label></li>
+                </ul>
             </div>
-            <div class="slide">
-                <img src="assets/img/banner2" alt="Banner 2">
+            <div class="filter-group">
+                <h4>Tipo de animal</h4>
+                <ul>
+                    <li><label><input type="checkbox"> Perro</label></li>
+                    <li><label><input type="checkbox"> Gato</label></li>
+                    <li><label><input type="checkbox"> Hamster</label></li>
+                    <li><label><input type="checkbox"> Raton</label></li>
+                    <li><label><input type="checkbox"> Pajarro</label></li>
+                </ul>
             </div>
-            <div class="slide">
-                <img src="assets/img/banner3" alt="Banner 3">
+            <div class="filter-group">
+                <h4>Color</h4>
+                <ul>
+                    <li><label><input type="checkbox"> Negro</label></li>
+                    <li><label><input type="checkbox"> Blanco</label></li>
+                    <li><label><input type="checkbox"> Rojo</label></li>
+                    <li><label><input type="checkbox"> Amarillo</label></li>
+                    <li><label><input type="checkbox"> Azul</label></li>
+                    <li><label><input type="checkbox"> Rosado</label></li>
+                </ul>
             </div>
-        </div>
-
-        <button class="carousel-btn prev">❮</button>
-        <button class="carousel-btn next">❯</button>
-        
-        <div class="carousel-dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-    </section>
+        </aside>
 
         <section class="products-section">
-        <h2>Productos Destacados</h2>
+            <div class="sort-bar">
+                <label for="orden">Ordenar por:</label>
+                <select id="orden">
+                    <option>Recomendado</option>
+                    <option>Precio: menor a mayor</option>
+                    <option>Precio: mayor a menor</option>
+                </select>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="assets/img/a (1).jpeg" alt="Producto 1">
+                    <h3>Producto 1</h3>
+                    <p class="price">$19.990</p>
+                    <button class="buy-btn">Agregar al carrito</button>
+                </div>
+                <div class="product-card">
+                    <img src="assets/img/a (2).jpeg" alt="Producto 2">
+                    <h3>Producto 2</h3>
+                    <p class="price">$19.990</p>
+                    <button class="buy-btn">Agregar al carrito</button>
+                </div>
+                <div class="product-card">
+                    <img src="assets/img/a (3).jpeg" alt="Producto 3">
+                    <h3>Producto 3</h3>
+                    <p class="price">$19.990</p>
+                    <button class="buy-btn">Agregar al carrito</button>
+                </div>
+            </div>
 
-    <div class="products-grid">
-        <div class="product-card">
-            <img src="assets/img/a (1).jpeg" alt="Producto 1">
-            <h3>Producto 1</h3>
-            <p class="price">$19.990</p>
-            <button class="buy-btn">Agregar al carrito</button>
-        </div>
-        <div class="product-card">
-            <img src="assets/img/a (2).jpeg" alt="Producto 2">
-            <h3>Producto 2</h3>
-            <p class="price">$19.990</p>
-            <button class="buy-btn">Agregar al carrito</button>
-        </div>
-        <div class="product-card">
-            <img src="assets/img/a (3).jpeg" alt="Producto 3">
-            <h3>Producto 3</h3>
-            <p class="price">$19.990</p>
-            <button class="buy-btn">Agregar al carrito</button>
-        </div>
-        <div class="product-card">
-            <img src="assets/img/a (4).jpeg" alt="Producto 4">
-            <h3>Producto 4</h3>
-            <p class="price">$19.990</p>
-            <button class="buy-btn">Agregar al carrito</button>
-        </div>
-        <div class="product-card">
-            <img src="assets/img/a (5).jpeg" alt="Producto 5">
-            <h3>Producto 5</h3>
-            <p class="price">$19.990</p>
-            <button class="buy-btn">Agregar al carrito</button>
-        </div>
-        <div class="product-card">
-            <img src="assets/img/a (6).jpeg" alt="Producto 6">
-            <h3>Producto 6</h3>
-            <p class="price">$19.990</p>
-            <button class="buy-btn">Agregar al carrito</button>
-        </div>
-        <div class="more-products">
-            <button class="more-btn">Ver más productos +</button>
-        </div>
-    </div>
+            <div class="pagination">
+                <a href="#">⟨</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <span>...</span>
+                <a href="#">8</a>
+                <a href="#">⟩</a>
+            </div>
+        </section> 
+    </main>
+
 
     <footer class="footer">
         <div class="footer-grid">
@@ -183,6 +195,5 @@
             <p>© 2025 Mi Tienda - Todos los derechos reservados</p>
         </div>
     </footer>
-
 </body>
 </html>
