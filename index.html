@@ -3,66 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ecommerse</title>
+    <title>E-commerce</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-    <div class="preheader">
-        <p>inserte cosa aqui</p>
-    </div>
-    <header class="header">
-        <div class="header-logo">
-            <img src="assets/img/logo" alt="Logo de la tienda">
-        </div>
-        <div class="header-search">
-            <input type="text" placeholder="Buscar productos...">
-            <button class="search-btn">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-         </div>
-        <div class="header-icons">
-            <a href="#" class="icon" title="Iniciar sesión">
-                <i class="fa-regular fa-user"></i>
-            </a>
-            <a href="#" class="icon" title="Carrito de compras">
-                <i class="fa-solid fa-cart-shopping"></i>
-            </a>
-        </div>
-
-    </header>
-
-    <nav class="categories">
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li class="desplegar">
-                <a href="Mujer.html">Ropa mujer</a>
-                <ul class="submenu">
-                    <li><a href="#">Vestidos</a></li>
-                    <li><a href="#">Zapatos</a></li>
-                    <li><a href="#">Accesorios</a></li>
-                </ul>
-            </li>
-            <li class="desplegar">
-                <a href="Infantil.html">Infantil</a>
-                <ul class="submenu">
-                    <li><a href="#">Ropa</a></li>
-                    <li><a href="#">Juguetes</a></li>
-                    <li><a href="#">Accesorios</a></li>
-                </ul>
-            </li>
-            <li class="desplegar">
-                <a href="Mascotas.html">Mascotas</a>
-                <ul class="submenu">
-                    <li><a href="#">Ropa</a></li>
-                    <li><a href="#">Juguetes</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    <div id="header"></div>
 
     <section class="carousel">
         <div class="carousel-container">
@@ -134,66 +81,7 @@
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-column">
-                <h3>Acerca de Nosotros</h3>
-                <ul class="footer-list">
-                    <li><a href="#">Quiénes somos</a></li>
-                    <li><a href="#">Términos y condiciones</a></li>
-                    <li><a href="#">Políticas de privacidad</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Soporte</h3>
-                <ul class="footer-list">
-                    <li><a href="#">Centro de ayuda</a></li>
-                    <li><a href="#">Envíos y devoluciones</a></li>
-                    <li><a href="#">Garantías</a></li>
-                    <li><a href="#">Contáctanos</a></li>
-                </ul>
-            </div>
-
-            <div class="social-icons">
-                <h3>Síguenos</h3>
-
-                <a href="#" aria-label="Facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="#" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="#" aria-label="Twitter">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-            </div>
-
-            <div class="footer-column">
-                <h3 class="footer-title">Recibe nuestras ofertas</h3>
-                <p class="footer-text">Ingresa tu correo y obtén descuentos cada semana.</p>
-                <form class="email-form">
-                    <input type="email" placeholder="Tu email aquí" class="email-input" required>
-                    <button type="submit" class="email-btn">Suscribirme</button>
-                </form>
-            </div>
-        </div>
-
-        <div class="payment-methods">
-            <h3>Medios de Pago</h3>
-            <div class="payment-icons">
-                <img src="assets/icons/payments/visa.svg" alt="Visa">
-                <img src="assets/icons/payments/mastercard.svg" alt="Mastercard">
-                <img src="assets/icons/payments/paypal.svg" alt="PayPal">
-                <img src="assets/icons/payments/bank.svg" alt="Transferencia bancaria">
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>© 2025 Mi Tienda - Todos los derechos reservados</p>
-        </div>
-    </footer>
-
+<div id="footer"></div>
+    <script src="assets/js/loadPartials.js"></script>
 </body>
 </html>
